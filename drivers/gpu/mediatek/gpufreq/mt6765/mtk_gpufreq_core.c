@@ -2179,6 +2179,14 @@ static int __mt_gpufreq_pdrv_probe(struct platform_device *pdev)
 	GPUFREQ_UNREFERENCED(g_efuse_base);
 	GPUFREQ_UNREFERENCED(__mt_gpufreq_get_opp_idx_by_volt);
 
+int MT_GPUFREQ_LOW_BATT_VOLT_LIMIT_FREQ;
+
+
+int MT_GPUFREQ_BATT_PERCENT_LIMIT_FREQ;
+
+
+int MT_GPUFREQ_BATT_OC_LIMIT_FREQ;
+
 #ifdef CONFIG_COMMON_CLK_MT6765
 #ifdef CONFIG_MTK_GPU_SUPPORT
 	gpufreq_pr_info("@%s: gpufreq driver probe, clock is %d KHz\n",
